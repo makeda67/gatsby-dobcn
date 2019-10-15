@@ -41,7 +41,7 @@ module.exports = {
         verboseOutput: false,
         perPage: 100,
         searchAndReplaceContentUrls: {
-          sourceUrl: "sandbox5.dobcn.com/hiring/maqueda/wp-admin",
+          sourceUrl: "https://www.sandbox5.dobcn.com/hiring/maqueda/wp-admin",
           replacementUrl: "https://localhost:8000",
         },
         // Set how many simultaneous requests are sent at once.
