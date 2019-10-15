@@ -1,0 +1,75 @@
+.footer-container {
+  border-top: 2px solid lightgray;
+  padding: 21px 15px;
+}
+
+.footer-container .footer-header-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer-container .footer-header-buttons .f-button-style {
+  background: none;
+  color: #25548e;
+  border: 1px solid #25548e;
+  border-radius: 60px;
+  font-size: 12px;
+  width: 42%;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  padding: 5px 0;
+}
+
+.footer-container .footer-header-buttons .f-button-style a {
+  line-height: 28px;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: inherit;
+}
+
+.footer-container .footer-header-buttons .f-button-style a img {
+  height: 18px;
+  margin-right: 14px;
+}
+
+.info-mobile .info-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 5%;
+  color: #25548e;
+}
+
+.info-mobile .info-container h3 {
+  margin: 2% 0;
+}
+
+.info-mobile .info-container ul {
+  margin: 2% 0;
+}
+
+.info-mobile .info-container a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.info-mobile .info-container .p-copyright {
+  text-align: center;
+}
+/*# sourceMappingURL=style.css.map */

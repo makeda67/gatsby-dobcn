@@ -1,21 +1,31 @@
 import React from "react"
 import { Link } from "gatsby"
 
-import Layout from "../components/layout"
+import Layout from "../components/layout";
+import Navbar from '../components/heading/Navbar.js';
 import Image from "../components/image"
 import SEO from "../components/seo"
 
+import './style.scss';
+
 const IndexPage = () => (
-  <Layout>
+  // <Layout>
+  <>
     <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
+    <Navbar />
+    <div className='div-helper'>
+      <h1 className='h1-helper'>Nuestra gama de productos</h1>
+      <h2 className='h2-helper'>Soluciones para el cuidado de articulaciones, bienestar digestivo, un sueño reparador, y para reforzar el sistema immunitario</h2>
     </div>
-    <Link to="/page-2/">Go to page 2</Link>
-  </Layout>
+    <div className='elements-container'>
+      <div className='product-filter'>
+      <div className='product-container'>
+
+      </div>
+      </div>
+    </div>
+    </>
+  // </Layout>
 )
 
 export default IndexPage
