@@ -32,7 +32,7 @@ module.exports = {
       resolve: "gatsby-source-wordpress",
       options: {
         // I have created a dummy site for us to use with the plugins we discussed
-        baseUrl: "sandbox5.dobcn.com/hiring/maqueda/wp-admin",
+        baseUrl: "sandbox5.dobcn.com/hiring/maqueda/wp-admin/?rest_route=/wp/v2/",
         protocol: "https",
         hostingWPCOM: false,
         // We will be using some advanced custom fields
@@ -41,7 +41,7 @@ module.exports = {
         verboseOutput: false,
         perPage: 100,
         searchAndReplaceContentUrls: {
-          sourceUrl: "https://www.sandbox5.dobcn.com/hiring/maqueda/wp-admin",
+          sourceUrl: "https://sandbox5.dobcn.com/hiring/maqueda/?rest_route=/wp/v2/",
           replacementUrl: "https://localhost:8000",
         },
         // Set how many simultaneous requests are sent at once.
