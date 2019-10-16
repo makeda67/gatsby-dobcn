@@ -6,6 +6,8 @@ import SEO from "../components/seo";
 import Navbar from "../components/heading/Navbar.js";
 import Footer from '../components/footer/Footer.js';
 
+import './style.scss';
+
 const SecondPage = () => (
   <>
     <SEO title="Page two" />
