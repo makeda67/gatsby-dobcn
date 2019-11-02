@@ -20,4 +20,4 @@ M'agrada utilitzar react i em sembla una bona proba perque pots fer la página c
 
 ## Link deploy
 
-[Deployed Webpage](https://makeda67.github.io/gatsby-dobcn/catalog/)
+[Deployed Webpage](https://confident-knuth-254bee.netlify.com/catalog/)
