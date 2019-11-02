@@ -47,53 +47,157 @@
         }
     }
 }
-.div-header {
-    margin-top: 10%;
-    background-image: url(https://sandbox5.dobcn.com/epaplus/wp-content/uploads/2019/02/header_LG_generico.png);
-    background-position: 50% 0%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 121px;
-    visibility: inherit;
-    .image-header {
-        width: 100%;
-    }
-}
+// .div-header {
+//     margin-top: 10%;
+//     background-image: url(https://sandbox5.dobcn.com/epaplus/wp-content/uploads/2019/02/header_LG_generico.png);
+//     background-position: 50% 0%;
+//     background-size: cover;
+//     background-repeat: no-repeat;
+//     width: 100%;
+//     height: 121px;
+//     visibility: inherit;
+//     .image-header {
+//         width: 100%;
+        
+//     }
+// }
 
 .toggler-info{
-    text-align: center;
-    color: lightgray;
-    cursor: pointer;
-    span{
-      font-weight: 800;
-    }
-    &:after{
+  text-align: center;
+  color: lightgray;
+  cursor: pointer;
+  span{
+    font-weight: 800;
+  }
+  &:after{
       content: '▾';
       margin: 0 5px;
       transition: $transition;
-      position:absolute;
-    }
+    position:absolute;
   }
-  .toggler-inverse{
-    &:after{
+}
+.toggler-inverse{
+  &:after{
       transform: rotate(180deg);
       position:absolute;
       transition: $transition
-    }
   }
-  .edit-container{
-    padding:15px;
+}
+.edit-container{
+  padding:15px;
     @include media('medium'){
       padding: 0;
     }
-    .edit-info-form{
+  .edit-info-form{
       max-width: 90%;
-    }
   }
-  .info, .info-container{
-    margin-left: 10px;
+}
+.info, .info-container{
+  margin-left: 10px;
     p{
       margin: 0 5px 20px;
     }
+}
+
+.navbar {
+  display: flex;
+  position: fixed;
+  top: 0;
+  height: 7%;
+  width: 100%;
+  background-color: white;
+  -webkit-box-shadow: 0px 7px 0px -1px rgba(0,0,0,0.05);
+  -moz-box-shadow: 0px 7px 0px -1px rgba(0,0,0,0.05);
+  box-shadow: 0px 7px 0px -1px rgba(0,0,0,0.05);
+  justify-content: space-between;
+  align-items: center;
+  
+  .left-thingo {
+      .boton {
+          margin: 0 auto;
+          display: block;
+          width: 30px;
+          height: 100%;
+          padding: 15px;
+          border-radius: 7px;
+          background: none;
+          color: black;
+          cursor: pointer;
+          position: relative;
+      }
+      
+      .boton span {
+          display: block;
+          width: 80%;
+          height: 2px;
+          background: black;
+          margin-top: 3px;
+          border-radius: 7px;
+      }
+      
+      label {
+        cursor: pointer;
+      }
+      #menu-toggle {
+        display: none;
+      }
+      #menu {
+        display: none;
+        text-align: center;
+        background: white;
+        padding:10px 0;
+      }
+      
+      #menu li a {
+          color: black;
+          padding: 10px 0;
+          display: block;
+      }
+      #menu-toggle:checked + #menu {
+        display: block;
+      }
+      @include media('medium'){
+        margin-left: 15%;
+      }
   }
+  .center-thingo {
+      height: 80%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img {
+          height: 55%;
+          width: 45%;
+      }
+  }
+  .right-thingo {
+      margin-right: 15px;
+      img {
+          height: 25px;
+      }
+      @include media('medium'){
+        margin-right: 15%;
+      }
+  }
+}
+
+.div-header {
+  margin-top: 10%;
+  margin-bottom: 10%;
+  background-image: url(https://sandbox5.dobcn.com/epaplus/wp-content/uploads/2019/02/header_LG_generico.png);
+  background-position: 50% 0%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 121px;
+  visibility: inherit;
+  .image-header {
+      width: 100%;
+  }
+  @include media('medium') {
+    height: 350px;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    width: 100%;
+  }
+}

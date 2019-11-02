@@ -7,9 +7,6 @@ import Catalog from './pages/catalog.js';
 import Product from './pages/product.js';
 import NotFound from './pages/404.js';
 
-
-import React, { Component } from 'react'
-
 class App extends Component {
     render() {
         return (
@@ -18,7 +15,7 @@ class App extends Component {
                     <Navbar />
                     <Switch>
                         <Route path='/' exact component={Catalog} />
-                        <Route path='/:id' exact component={Product} />
+                        <Route path='/product/:id' exact component={Product} />
                         <Route component={NotFound} />
                     </Switch>
                     <Footer />

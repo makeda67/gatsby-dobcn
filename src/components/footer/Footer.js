@@ -30,14 +30,14 @@ import './style.scss';
                         <h3><a href='#'>Peroxfarma</a></h3>
                         <h3><a href='#'>Mussvital</a></h3>
                         <h3>Acerca del fondo Europeo</h3>
-                        <p>
+                        <p className='footer-info'>
                             Peroxfarma, ha sido beneficiaria del Fondo Europeo de Desarrollo Regional 
                             cuyo objetivo es mejorar la competitividad de las Pymes y gracias al cual 
                             ha puesto en marcha un Plan de Internacionalización con el objetivo de mejorar 
                             su posicionamiento competitivo en el exterior durante el año 2018. Para ello 
                             ha contado con el apoyo del Programa XPANDE de la Cámara de Comercio de Barcelona.
                         </p>
-                        <img src="https://sandbox5.dobcn.com/epaplus/wp-content/themes/epaplus/assets/images/footer/logos.png" alt='logos' />
+                        <img className='img-footer' src="https://sandbox5.dobcn.com/epaplus/wp-content/themes/epaplus/assets/images/footer/logos.png" alt='logos' />
                         <h3><a href='#'>Sobre nosotros</a></h3>
                         <h3><a href='#'>Contacto</a></h3>
                         <h3><a href='#'>FAQ</a></h3>
